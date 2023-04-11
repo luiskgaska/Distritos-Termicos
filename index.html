@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">   
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>DT</title>
+</head>
+<body onload="ready()">
+        <nav>
+            <h1 class="titulo">DT - Uniremington</h1>
+        </nav>
+    <div id="divPaso1">
+        <h1>Div Paso 1</h1>
+        <p> INGRESE EL FACTOR DE SERVICIO (entre 1 y 3): <input type="number" step="0.01" id="f_servicio" min="1" max="3" requiered>
+        <p>INGRESE EL CAUDAL: <input type="number" id="caudal" requiered>
+        <input type="submit" value="Guardar" ></p> 
+        <p>INGRESE LA TEMPERATURA DE ENTRADA: <input type="number" id="te" requiered>
+        <input type="submit" value="Guardar" ></p>         
+        <p>INGRESE LA TEMPERATURA DE SALIDA: <input type="number" id="ts" requiered>
+        <input type="submit" value="Guardar" ></p>    
+        
+        <p><input type="button" name="Calcular" value="Calcular" onclick="paso1()"></p>
+
+    </div>
+    <div id="divPaso2">
+        <h1>Div Paso 2</h1>
+        <p>TAMAÑOS DE CHILLERS CETRÍFUGOS Y DE ABSORCIÓN 500TR, 750TR, 1000TR</p>
+        <p>POR FAVOR INDICAR CANTIDAD Y LEA CON DETENIMIENTO</p>
+        <p>INGRESE LA CANTIDAD PARA 500TR CENTRÍFUGOS: <input type="number" id="c500" requiered>
+        <input type="submit" value="Guardar"></p>
+        <p>INGRESE LA CANTIDAD PARA 750TR CENTRÍFUGOS: <input type="number" id="c750" requiered>
+        <input type="submit" value="Guardar"></p>
+        <p>INGRESE LA CANTIDAD PARA 1000TR CENTRÍFUGOS: <input type="number" id="c1000" requiered>
+        <input type="submit" value="Guardar"></p>  
+        <p></p>
+        <p>INGRESE LA CANTIDAD PARA 500TR ABSORCIÓN: <input type="number" id="aa500" requiered>
+        <input type="submit" value="Guardar"></p>
+        <p>INGRESE LA CANTIDAD PARA 750TR ABSORCIÓN: <input type="number" id="a750" requiered>
+        <input type="submit" value="Guardar"></p>
+        <p>INGRESE LA CANTIDAD PARA 1000TR ABSORCIÓN: <input type="number" id="a1000" requiered>
+        <input type="submit" value="Guardar"></p>  
+        
+        <p><input type="button" name="Calcular" value="Mostrar tabla" onclick="paso2()"></p>
+        
+    </div>
+
+    <div id="divPaso3">
+
+        
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
