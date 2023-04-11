@@ -100,5 +100,48 @@ function paso3(rp,g,c,o,capex,ft,e,b,totalc){
                     <td>${" "}</td>
                 </tr>
             </tbody>
+        </table>
+        <h1>Absorción</h1>
+        <table class="table2">
+            <thead>
+                <tr>
+                    <th scope="col">Energía</th>
+                    <th scope="col">Emisiones CO2(TCo2 al mes)</th>
+                    <th scope="col">Capex(Dolares por Megavatios)</th>
+                    <th scope="col">Opex(Dolares al año)</th>
+                </tr>
+            </thead>
+            <tbody id="fila1">
+                <tr>
+                    <th scope="row">Microturbina a gas</th>
+                    <td>${g}</td>
+                    <td>${g}</td>
+                    <td>${g}</td>
+                </tr>
+            </tbody>
+            <tbody id="fila2">
+                <tr>
+                    <th scope="row">Solar térmica</th>
+                    <td>${capex}</td>
+                    <td>${capex}</td>
+                    <td>${capex}</td>
+                </tr>
+            </tbody>
+            <tbody id="fila3">
+                <tr>
+                    <th scope="row">Energía biomasa</th>
+                    <td>${b}</td>
+                    <td>${b}</td>
+                    <td>${b}</td>
+                </tr>
+            </tbody>
+            <tbody id="fila4">
+                <tr>
+                    <th scope="row">Toneladas de refrigeración que suministran los chillers centrífugos seleccionados es: </th>
+                    <td>${totalc}</td>
+                    <td>${" "}</td>
+                    <td>${" "}</td>
+                </tr>
+            </tbody>
         </table>`
 }
